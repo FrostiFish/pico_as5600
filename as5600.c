@@ -88,14 +88,14 @@ typedef enum {
  *
  * @warning         i2c must be initialised first!
  */
-as5600_t as5600_init(uint8_t sda, uint8_t scl, i2c_inst_t* i2c_instance)
+void as5600_init(as5600_t* as5600, i2c_inst_t* i2c_instance)
 {
     // if (get_gpio_i2c_type(sda) != DATA)
     //     return 3;
     // if (get_gpio_i2c_type(scl) != CLOCK)
     //     return 2;
 
-    // as5600->i2c_inst = get_i2c_inst(sda);
+    as5600->i2c_inst = i2c_instance;
 
     // if (as5600->i2c_inst != get_i2c_inst(scl))
     //     return 1;
@@ -109,8 +109,6 @@ as5600_t as5600_init(uint8_t sda, uint8_t scl, i2c_inst_t* i2c_instance)
 
     // as5600->sda = sda;
     // as5600->scl = scl;
-
-    return (as5600_t) {sda, scl, i2c_instance};
 }
 
 /**
