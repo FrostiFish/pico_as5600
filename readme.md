@@ -1,5 +1,5 @@
-# pico-as5600
-pico-as5600 is a library for the Pico C/C++ SDK to interface with the AS5600 12-Bit Programmable Contactless Potentiometer over I2C. This is a fork of [dwm_pico_as5600](https://github.com/dancesWithMachines/dwm_pico_as5600/tree/main). All functions are originally made by dancesWithMachines. This fork was meant to give me more control over the init function. This library is an INTERFACE CMake library.
+# pico_as5600
+pico_as5600 is a library for the Pico C/C++ SDK to interface with the AS5600 12-Bit Programmable Contactless Potentiometer over I2C. This is a fork of [dwm_pico_as5600](https://github.com/dancesWithMachines/dwm_pico_as5600/tree/main). All functions are originally made by dancesWithMachines. This fork was meant to give me more control over the init function. This library is an INTERFACE CMake library.
 
 **Contents:**
 1. [Using library](#using-library)
